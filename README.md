@@ -2,7 +2,7 @@
 
 A modern task management application built with React, Material UI, Node.js, Express, and MongoDB.
 
-## 🚀 Features
+## Features
 
 ### Frontend
 - **React** with **Material UI** for beautiful, responsive UI
@@ -22,7 +22,7 @@ A modern task management application built with React, Material UI, Node.js, Exp
 - **Input Validation** and error handling
 - **CORS** configured for frontend integration
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React 18
@@ -41,7 +41,7 @@ A modern task management application built with React, Material UI, Node.js, Exp
 - CORS middleware
 - dotenv (Environment variables)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 taskify/
@@ -63,7 +63,7 @@ taskify/
 └── README.md
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -101,7 +101,7 @@ taskify/
    npm install
    ```
 
-### 🏃‍♂️ Running the Application
+### Running the Application
 
 1. **Start MongoDB**
    Make sure MongoDB is running locally or update the `MONGODB_URI` in your `.env` file to point to MongoDB Atlas.
@@ -123,7 +123,7 @@ taskify/
 4. **Open your browser**
    Navigate to http://localhost:5173 to use the application.
 
-## 📚 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /auth/signup` - Register a new user
@@ -138,7 +138,7 @@ taskify/
 - `DELETE /tasks/:id` - Delete task
 - `PATCH /tasks/:id/status` - Update task status
 
-## 🔧 Configuration
+## Configuration
 
 ### MongoDB Setup
 You can use either:
@@ -156,7 +156,7 @@ You can use either:
 - Change the `JWT_SECRET` in your `.env` file to a secure random string
 - Adjust `JWT_EXPIRES_IN` as needed (default: 7 days)
 
-## 🧪 Testing the Application
+## Testing the Application
 
 1. **Sign Up**: Create a new account with username, email, and password
 2. **Login**: Sign in with your credentials
@@ -164,7 +164,7 @@ You can use either:
 4. **Manage Tasks**: Edit, delete, and change task status
 5. **Filter Tasks**: View tasks by status (pending, in-progress, completed)
 
-## 🚀 Production Deployment
+## Production Deployment
 
 ### Backend Deployment
 1. Set `NODE_ENV=production` in your environment
@@ -176,43 +176,3 @@ You can use either:
 1. Update the API base URL in `src/services/api.js`
 2. Build the production bundle: `npm run build`
 3. Deploy the `dist` folder to your hosting provider
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Troubleshooting
-
-### Common Issues
-
-1. **CORS Errors**: Make sure the backend CORS_ORIGIN matches your frontend URL
-2. **MongoDB Connection**: Ensure MongoDB is running and the connection string is correct
-3. **Port Conflicts**: Change the PORT in the server .env file if 5000 is occupied
-4. **JWT Errors**: Verify your JWT_SECRET is set and consistent
-
-### Support
-
-If you encounter any issues, please check:
-1. All dependencies are installed (`npm install`)
-2. Environment variables are set correctly
-3. MongoDB is running and accessible
-4. Both frontend and backend servers are running
-
-## 🎯 Future Enhancements
-
-- Task categories/tags
-- File attachments
-- Task collaboration
-- Real-time notifications
-- Task templates
-- Calendar integration
-- Mobile app
-- Dark theme toggle
